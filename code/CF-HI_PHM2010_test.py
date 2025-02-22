@@ -16,7 +16,6 @@ import numpy as np
 import scipy.io
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
-from scipy.signal import savgol_filter
 import concurrent.futures
 import random
 import pandas as pd
@@ -734,7 +733,6 @@ def main():
             res = tool_results[tool_no]
             life_data = res['life_data']
             shock_data = res['shock_data']
-            real_rul = res['real_rul']
             predicted_rul = res['predicted_rul']
             pulse_indices = res['pulse_indices']
             pulse_line = res['pulse_line']
